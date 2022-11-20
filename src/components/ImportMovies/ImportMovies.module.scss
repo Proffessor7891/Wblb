@@ -1,0 +1,73 @@
+@import '../../assets/styles/costants.scss';
+
+.form {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: $modal-color;
+  justify-content: center;
+
+
+     .title {
+       text-align: center;
+       margin-bottom: 10px;
+     }
+     
+     .label {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 10px;
+     }
+     
+     .button {
+       padding: 5px 10px;
+       background-color: $mainBtn-color;
+       border-color: $border-color;
+       color: $text-color;
+       margin-top: 5px;
+     }
+     
+     .button:disabled {
+       background-color: $btn-color;
+       cursor: not-allowed;
+     }
+     
+     .file_label {
+       text-align: center;
+     }
+     
+     .file_input {
+       width: 0.1px;
+       height: 0.1px;
+       opacity: 0;
+       overflow: hidden;
+       position: absolute;
+       z-index: -1;
+     }
+     
+     .file_input + .file_label {
+       font-size: 1.25em;
+       font-weight: 700;
+       background-color: $input-color;
+       display: inline-block;
+       padding: 20px;
+     }
+     
+     .file_input:focus + .file_label,
+     .file_input + .file_label:hover {
+       background-color: $mainBtn-color;
+     }
+     
+     .file_name {
+       margin-top: 5px;
+       margin-bottom: 5px;
+       text-align: center;
+     }
+     
+     .file_error {
+       text-align: center;
+       margin-bottom: 5px;
+       color: $error-color;
+     }
+}

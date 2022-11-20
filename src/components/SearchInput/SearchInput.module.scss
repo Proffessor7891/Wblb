@@ -1,0 +1,37 @@
+@import '../../assets/styles/costants.scss';
+
+.input {
+  padding: 0 14px;
+  min-height: 50px;
+  min-width: 250px;
+  outline: none;
+  line-height: 2;
+  min-width: 300px;
+  border: 1px solid $inputborder-color;
+}
+.input:hover,
+.input:focus {
+  outline: 1px solid $mainBtn-color;
+  border: none;
+}
+
+.btn {
+  padding: 14px;
+  background-color: $mainBtn-color;
+  border-color: $border-color;
+  color: $text-color;
+  margin-left: 10px;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 14px;
+  background-color: $mainBtn-color;
+  border-color: $border-color;
+  color: $text-color;
+  margin-left: 10px;
+}

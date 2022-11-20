@@ -1,0 +1,97 @@
+@import '../../assets/styles/costants.scss';
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: $modal-color;
+    .title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .input {
+      padding: 0 14px;
+      min-height: 50px;
+      min-width: 250px;
+      line-height: 2;
+    }
+    .input:hover,
+    .input:focus {
+      outline: 3px solid $mainBtn-color;
+    }
+    .button {
+      padding: 5px 10px;
+      background-color: $mainBtn-color;
+      border-color: $border-color;
+      margin-top: 5px;
+    }
+    
+    .toggle_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .toggle_btn {
+      appearance: none;
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 25px;
+      margin-left: 10px;
+      vertical-align: top;
+      background: $background-color;
+      border: 1px solid $border-color;
+      outline: none;
+      cursor: pointer;
+    }
+    
+    .toggle_btn::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 1px;
+      top: 1.5px;
+      width: 20px;
+      height: 20px;
+      background-color: $mainBtn-color;
+      transform: translateX(0);
+      transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+    
+    .toggle_btn:checked::after {
+      transform: translateX(calc(100% + 6px));
+      transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+      background-color: #fff;
+    }
+    .toggle_btn:checked {
+      background-color: $mainBtn-color;
+    }
+    
+    .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .nav_btn {
+      margin-top: 5px;
+      padding: 5px;
+      border: none;
+      background-color: inherit;
+      text-decoration: underline;
+    }
+  }   

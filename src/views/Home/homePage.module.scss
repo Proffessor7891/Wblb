@@ -1,0 +1,24 @@
+@import '../../assets/styles/costants.scss';
+
+.section {
+  padding: 60px;
+  text-align: center;
+  background-color: $modal-color;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+
+    .link {
+      padding: 10px;
+      margin-top: 10px;
+      background-color: $mainBtn-color;
+      border-color: $border-color;
+      color: $text-color;
+    }
+    
+    .link:not(:last-child) {
+      margin-right: 20px;
+    }
+}
